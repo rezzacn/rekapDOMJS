@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+:root {
+  --mainColor: #004643;
+  --secondaryColor: #abd1c6;
+  --acsentColor: #ffa41b;
+  --headlineColor: #fffffe;
+  --paragrafColor: #abd1c6;
+}
+
+body {
+  background-color: var(--mainColor);
+}
+/* Navbar Start */
+nav {
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: var(--mainColor);
+}
+nav li {
+  color: white;
+  transition: 1s;
+}
+nav li:hover {
+  background-color: var(--acsentColor);
+}
+
+.nav-link.active {
+  color: var(--acsentColor) !important;
+  font-weight: 700;
+}
+/* Navbar End */
+
+/* Suwit Start */
+#suwit {
+  padding-top: 20px;
+}
+#suwit h2 {
+  font-size: 30px;
+  color: var(--headlineColor);
+}
+
+#suwit .content {
+  width: 600px;
+  margin: auto;
+  padding: 10px;
+  background-color: #abd1c6;
+  border-radius: 40px;
+  box-sizing: border-box;
+}
+
+.area-komputer {
+  margin: 5px auto;
+  padding: 10px;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+.area-komputer img {
+  width: 20%;
+}
+
+.area-player {
+  margin: 5px auto;
+  padding: 10px;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+.area-player img {
+  width: 60%;
+}
+
+.area-player img:hover {
+  cursor: pointer;
+}
+
+.area-hasil {
+  margin: 5px auto;
+  padding: 10px;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+.area-hasil img {
+  width: 20%;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-right: 10px;
+}
+/* Suwit end */
+
+/* gallery start */
+#gallery {
+  background-color: var(--secondaryColor);
+}
+#gallery .container {
+  justify-content: center;
+  text-align: center;
+  width: 700px;
+  margin: 10px auto;
+  border: 5px solid white;
+  overflow: auto;
+  background-color: var(--mainColor);
+  padding: 0;
+}
+
+.thumb {
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  flex-basis: calc(33.33% - 10px);
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+
+.thumbnail {
+  margin-top: 20px;
+}
+
+.thumb:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.fade {
+  opacity: 0.5;
+  animation: fadeIn 0.5s forwards;
+}
+
+#gallery .active {
+  opacity: 0.5;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+/* gallery end */
