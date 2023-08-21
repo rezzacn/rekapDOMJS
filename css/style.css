@@ -149,3 +149,22 @@ li {
   }
 }
 /* gallery end */
+
+@media screen and (max-width: 768px) {
+  #suwit .content {
+    width: 350px;
+  }
+
+  #gallery .container {
+    width: 350px;
+  }
+
+  .thumb {
+    justify-content: center;
+    text-align: center;
+    width: 110px;
+    flex-basis: calc(33.33% - 10px);
+    border: 2px solid white;
+    box-sizing: border-box;
+  }
+}
